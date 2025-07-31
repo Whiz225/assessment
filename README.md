@@ -1,12 +1,64 @@
-# React + Vite
+# assessment
+# Quixess Front-End Hiring Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome, and thanks for your interest in joining **Quixess** as a Front-End Engineer!  
+This test is designed to evaluate your skills in **React**, **component structure**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Task: Build a Multi-Step Onboarding Modal
 
-## Expanding the ESLint configuration
+Build a modal component that guides a user through a **3-step onboarding process** using tabbed navigation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🧱 Requirements
+
+The modal should contain three steps, each as a separate tab:
+
+#### Step 1: Personal Info
+- Full Name (text input)
+- Email Address (email input)
+
+#### Step 2: Account Setup
+- Username (text input)
+- Password (password input)
+
+#### Step 3: Preferences
+- Theme selection (dropdown: `Light` or `Dark`)
+- Subscribe to newsletter? (checkbox)
+
+### 🔄 Navigation
+- Show steps visually using tabs at the top or side (Step 1, 2, 3).
+- Users can navigate using **Next**, **Back**, and **Submit** buttons.
+- Each step should be a **separate React component**.
+
+### 🔧 Tech Stack
+- React (with Hooks)
+- Tailwind CSS
+- No external UI libraries (no Material UI, Bootstrap, etc.)
+
+---
+
+### ✨ Bonus Points
+
+- Step-by-step validation (don’t allow user to proceed until current step is valid)
+- Smooth transitions or animations
+- Reusable or modular component architecture
+- Clean, responsive UI
+
+---
+
+## 🧑‍💻 How to Fork & Submit Your Work
+
+1. Go to our public test repo:  
+   👉 [`https://github.com/blutechsolutions/assessment`](https://github.com/blutechsolutions/assessment)
+
+2. Click the **"Fork"** button at the top-right of the page to create your own copy.
+
+3. Clone your fork to your local machine and start working:
+
+   ```bash
+   git clone https://github.com/your-username/assessment.git
+   cd quixess-frontend-test
+   npm install
+   npm run dev
+ ### Submit your fork repository to us on Indeed via your email

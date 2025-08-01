@@ -9,7 +9,7 @@ const Preferences = ({ formData, handleChange }) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <h2 className="text-xl font-semibold text-gray-800">Preferences</h2>
+      <h2>Preferences</h2>
       <div>
         <label
           htmlFor="theme"
@@ -35,6 +35,7 @@ const Preferences = ({ formData, handleChange }) => {
             id="newsletter"
             name="newsletter"
             type="checkbox"
+            autoComplete="on"
             checked={formData.newsletter}
             onChange={handleChange}
             className="h-[1rem] w-[1rem] mb-[1rem]"

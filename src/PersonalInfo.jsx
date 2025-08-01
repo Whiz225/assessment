@@ -9,14 +9,9 @@ const PersonalInfo = ({ formData, handleChange, errors }) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <h2 className="text-xl font-semibold text-gray-800">
-        Personal Information
-      </h2>
+      <h2>Personal Information</h2>
       <div>
-        <label
-          htmlFor="fullName"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="fullName" className="block text-sm">
           Full Name
         </label>
         <Input
@@ -25,11 +20,12 @@ const PersonalInfo = ({ formData, handleChange, errors }) => {
           name="fullName"
           value={formData.fullName}
           onChange={handleChange}
-          className={errors.fullName ? "border-red-700" : "border"}
+          autoComplete="on"
+          className={errors.fullName ? "border-[#b91c1c]" : "border"}
         />
         {errors.fullName && (
           <motion.p
-            className="mt-1 text-sm text-red-800"
+            className="mt-1 text-sm text-[#991b1b]"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -38,10 +34,7 @@ const PersonalInfo = ({ formData, handleChange, errors }) => {
         )}
       </div>
       <div>
-        <label
-          htmlFor="email"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="email" className="block text-sm">
           Email Address
         </label>
         <Input
@@ -50,11 +43,12 @@ const PersonalInfo = ({ formData, handleChange, errors }) => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={errors.email ? "border-red-700" : "border"}
+          autoComplete="on"
+          className={errors.email ? "border-[#b91c1c]" : "border"}
         />
         {errors.email && (
           <motion.p
-            className="mt-1 text-sm text-red-800"
+            className="mt-1 text-sm text-[#991b1b]"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >

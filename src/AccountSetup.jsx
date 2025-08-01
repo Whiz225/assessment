@@ -9,12 +9,9 @@ const AccountSetup = ({ formData, handleChange, errors }) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <h2 className="text-xl font-semibold text-gray-800">Account Setup</h2>
+      <h2>Account Setup</h2>
       <div>
-        <label
-          htmlFor="username"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="username" className="block text-sm">
           Username
         </label>
         <Input
@@ -22,12 +19,13 @@ const AccountSetup = ({ formData, handleChange, errors }) => {
           id="username"
           name="username"
           value={formData.username}
+          autoComplete="on"
           onChange={handleChange}
-          className={errors.username ? "border-red-700" : "border"}
+          className={errors.username ? "border-[#b91c1c]" : "border"}
         />
         {errors.username && (
           <motion.p
-            className="mt-1 text-sm text-red-800"
+            className="mt-1 text-sm text-[#991b1b]"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -36,10 +34,7 @@ const AccountSetup = ({ formData, handleChange, errors }) => {
         )}
       </div>
       <div>
-        <label
-          htmlFor="password"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="password" className="block text-sm">
           Password
         </label>
         <Input
@@ -47,12 +42,13 @@ const AccountSetup = ({ formData, handleChange, errors }) => {
           id="password"
           name="password"
           value={formData.password}
+          autoComplete="on"
           onChange={handleChange}
-          className={errors.password ? "border-red-700" : "border"}
+          className={errors.password ? "border-[#b91c1c]" : "border"}
         />
         {errors.password && (
           <motion.p
-            className="mt-1 text-sm text-red-800"
+            className="mt-1 text-sm text-[#991b1b]"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >

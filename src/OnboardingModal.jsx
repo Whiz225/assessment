@@ -113,13 +113,13 @@ const OnboardingModal = ({ onClose }) => {
 
   return (
     <motion.div
-      className="fixed inset-0 bg-brand-900 bg-opacity-50 flex items-center justify-center rounded-[1rem] p-[3rem]"
+      className="bg-[#0c1c47] rounded-[1rem] p-[3rem]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className="bg-white rounded-lg shadow-xl w-full max-w-md"
+        // className="bg-white rounded-lg shadow-xl w-full max-w-md"
         variants={modalVariants}
         initial="hidden"
         animate="visible"
@@ -135,9 +135,9 @@ const OnboardingModal = ({ onClose }) => {
                   onClick={() => tab < step && setStep(tab)}
                   style={`${
                     step === tab
-                      ? "bg-green-700"
+                      ? "bg-[#15803d]"
                       : tab < step
-                      ? "bg-brand-600"
+                      ? "bg-[#4f46e5]"
                       : ""
                   }
                     ${tab < step ? "cursor-pointer" : "cursor-default"}`}
